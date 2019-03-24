@@ -6,7 +6,7 @@ n.times do |hoge|
     i = gets.chomp.split.map(&:to_i)
     x [hoge] = i
 end
-x =  x.sort {|a,b| a[0] <=> b[0]}
+x.sort!
 n.times do |hoge|
     if m < x[hoge][1]
         ans += x[hoge][0] * m
